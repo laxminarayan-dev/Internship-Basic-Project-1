@@ -41,6 +41,7 @@ nav {
 .right > ul > li > a {
   color: black;
   text-decoration: none;
+  font-size: 13px;
 }
 .right > ul > li > a::after {
   content: "";
@@ -61,8 +62,8 @@ nav {
 .right > ul > li:nth-child(3) > a {
   background-color: black;
   border: 2px solid black;
-  color: white;
-  padding: 3px 15px 6px 15px;
+  color: wheat;
+  padding: 3px 20px 6px 20px;
   border-radius: 50px;
 }
 .right > ul > li:nth-child(3) > a:hover {
@@ -73,10 +74,10 @@ nav {
 .right > ul > li:nth-child(4) > a {
   background-color: transparent;
   border: 2px solid black;
-  padding: 3px 15px 6px 15px;
+  padding: 3px 20px 6px 20px;
   border-radius: 50px;
 }
 .right > ul > li:nth-child(4) > a:hover {
   background-color: black;
-  color: white;
+  color: wheat;
 }

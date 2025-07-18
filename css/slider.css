@@ -54,20 +54,6 @@
 .heroText > a:hover {
   background-color: antiquewhite;
 }
-/*.text-slider-box {
-  background-color: #f4efffa4;
-}
-.text-slider {
-  position: relative;
-  display: flex;
-  white-space: nowrap;
-  animation: text-slide 60s linear 0s infinite normal none running;
-  font-size: 14px;
-  color: #663bbb;
-  font-weight: 600;
-  padding: 5px 0px;
-} */
-
 @keyframes slide {
   0% {
     left: 0%;
@@ -90,99 +76,8 @@
     left: -200%;
   }
 }
-/* @keyframes text-slide {
-  from {
-    left: 100%;
-  }
-  to {
-    left: -5100px;
-  }
-} */
-
 @media screen and (min-width: 320px) and (max-width: 810px) {
   .sliderBox {
     height: 350px;
   }
-
-  .room-cards {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
-}
-
-/*  */
-
-/* Booking Form */
-.booking-form {
-  background: #f4f4f4;
-  padding: 40px 0;
-}
-
-.booking-form h3 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.booking-form form {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-.booking-form input,
-.booking-form button {
-  padding: 10px;
-  font-size: 16px;
-}
-
-.booking-form button {
-  background: #333;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
-/* Room Cards */
-.rooms {
-  padding: 40px;
-  background: #fff;
-}
-
-.rooms h3 {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.room-cards {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.room-card {
-  background: #fafafa;
-  padding: 0px 0 15px 0;
-  border: 1px solid #ddd;
-  width: 300px;
-  text-align: left;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.room-card img {
-  max-width: 100%;
-}
-
-.room-card h4 {
-  margin-top: 10px;
-}
-
-footer {
-  background: #333;
-  color: white;
-  text-align: center;
-  padding: 15px 0;
-  margin-top: 20px;
 }

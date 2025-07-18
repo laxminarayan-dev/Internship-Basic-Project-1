@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/slider.css" />
+    <link rel="stylesheet" href="./css/rooms.css" />
+    <link rel="stylesheet" href="./css/enquiry.css" />
     <style>
       * {
         margin: 0;
@@ -68,48 +70,29 @@
         </div>
       </section>
 
-      <section class="rooms">
-        <div class="container">
-          <h3>Our Rooms</h3>
-          <div class="room-cards">
-            <div class="room-card">
-              <img src="./images/roomImages/room1.jpg" alt="Room 1" />
-              <div>
-                <h4>Deluxe Room</h4>
-                <p>₹4,999 per night</p>
-                <button>Book</button>
-              </div>
-            </div>
-            <div class="room-card">
-              <img src="./images/roomImages/room2.jpg" alt="Room 2" />
-              <h4>Luxury Suite</h4>
-              <p>₹7,499 per night</p>
-            </div>
-            <div class="room-card">
-              <img src="./images/roomImages/room3.jpg" alt="Room 3" />
-              <h4>Family Room</h4>
-              <p>₹6,299 per night</p>
-            </div>
-            <div class="room-card">
-              <img src="./images/roomImages/room4.jpg" alt="Room 3" />
-              <h4>Family Room</h4>
-              <p>₹6,299 per night</p>
-            </div>
-            <div class="room-card">
-              <img src="./images/roomImages/room5.jpg" alt="Room 3" />
-              <h4>Family Room</h4>
-              <p>₹6,299 per night</p>
-            </div>
-            <div class="room-card">
-              <img src="./images/roomImages/room6.jpg" alt="Room 3" />
-              <h4>Family Room</h4>
-              <p>₹6,299 per night</p>
-            </div>
-          </div>
-        </div>
+      <!-- rooms section to book room -->
+      <section id="rooms">
+        <h3>Our Rooms</h3>
+        <div class="roomCards"></div>
+      </section>
+
+      <!-- enquiry section to get info about rooms -->
+      <section id="enquiry">
+        <h3>Enquiry</h3>
+        <form action="#">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" />
+          <label for="phone">Phone No.</label>
+          <input type="text" name="phone" id="phone" />
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+          <input type="button" value="Submit" />
+        </form>
       </section>
     </main>
 
     <footer></footer>
+
+    <script src="./js/rooms.js"></script>
   </body>
 </html>

@@ -1,3 +1,10 @@
-section {
+section:not(:nth-child(1)) {
   max-width: 1000px;
+  padding: 40px;
+  background: #fff;
+}
+
+section:not(:nth-child(1)) h3 {
+  text-align: center;
+  margin-bottom: 30px;
 }

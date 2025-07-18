@@ -1,0 +1,21 @@
+#enquiry {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 20px;
+  gap: 10px;
+}
+form > input {
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
