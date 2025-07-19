@@ -3,6 +3,7 @@
   grid-template-columns: repeat(6, 1fr);
   gap: 20px;
   width: 100%;
+  overflow: auto;
 }
 .destinationCard {
   position: relative;
@@ -46,4 +47,21 @@
   color: white;
   padding: 10px;
   border-radius: 5px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .destinationCard {
+    height: 2 00px;
+    width: 300px;
+  }
+  .destinationCard:nth-child(1),
+  .destinationCard:nth-child(2) {
+    grid-column: span 1;
+  }
+
+  .destinationCard:nth-child(3),
+  .destinationCard:nth-child(4),
+  .destinationCard:nth-child(5) {
+    grid-column: span 1;
+  }
 }

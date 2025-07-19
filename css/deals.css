@@ -2,6 +2,8 @@
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
+  max-width: fit-content;
+  margin: auto;
 }
 
 .roomCard {
@@ -71,10 +73,13 @@
   font-weight: 700;
 }
 
-@media screen and (min-width: 320px) and (max-width: 810px) {
+@media screen and (min-width: 690px) and (max-width: 1012px) {
   .roomCards {
-    display: grid;
-    gap: 20px;
     grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 690px) {
+  .roomCards {
+    grid-template-columns: repeat(1, 1fr) !important;
   }
 }

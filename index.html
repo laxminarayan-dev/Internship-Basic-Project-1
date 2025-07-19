@@ -1,256 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookMyHotel</title>
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/slider.css" />
+    <link rel="stylesheet" href="./css/deals.css" />
+    <link rel="stylesheet" href="./css/destination.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BookMyHotel</title>
-  <link rel="stylesheet" href="./css/navbar.css" />
-  <link rel="stylesheet" href="./css/common.css" />
-  <link rel="stylesheet" href="./css/slider.css" />
-  <link rel="stylesheet" href="./css/deals.css" />
-  <link rel="stylesheet" href="./css/enquiry.css" />
-  <link rel="stylesheet" href="./css/destination.css" />
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-  </style>
-</head>
-
-<body>
-  <header>
-    <nav>
-      <div class="left">
-        <div class="logo">
-          <a href="/">MyStayMate</a>
+  <body>
+    <header>
+      <nav>
+        <div class="left">
+          <div class="logo">
+            <a href="/">MyStayMate</a>
+          </div>
         </div>
-      </div>
-      <div class="right">
-        <ul>
-          <li><a href="../pages/about.html">About</a></li>
-          <li><a href="../pages/booking.html">Book-Room</a></li>
-          <li><a href="../pages/login.html">Login</a></li>
-          <li><a href="../pages/register.html">Register</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <!-- crousel section to display images in a slidebar -->
-    <section id="heroSection">
-      <div class="sliderBox">
-        <div class="slider">
-          <div style="
+        <div class="right">
+          <ul>
+            <li><a href="../pages/about.html">About</a></li>
+            <li><a href="../pages/booking.html">Rooms</a></li>
+            <li><a href="../pages/login.html">Login</a></li>
+            <li><a href="../pages/register.html">Register</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- crousel section to display images in a slidebar -->
+      <section id="heroSection">
+        <div class="sliderBox">
+          <div class="slider">
+            <div
+              style="
                 background-image: url('./images/crouselImages/crouselimg01.jpg');
-              ">
-          </div>
-          <div style="
+              "
+            ></div>
+            <div
+              style="
                 background-image: url('./images/crouselImages/crouselimg02.jpg');
-              ">
-          </div>
-          <div style="
+              "
+            ></div>
+            <div
+              style="
                 background-image: url('./images/crouselImages/crouselimg03.jpg');
-              ">
-
+              "
+            ></div>
           </div>
         </div>
-      </div>
-      <div class="heroText">
-        <h2>Book Your Stay with Comfort</h2>
-        <p>Luxury rooms & great service</p>
-        <a href="#" class="btn">Book Now</a>
-      </div>
-    </section>
-
-    <!-- trending travel destination section -->
-
-    <section id="trendingDestinations">
-      <div class="heading">
-        <h3>Trending Travel Destinations</h3>
-        <p>Explore the best places to stay</p>
-      </div>
-      <div class="destinationCards">
-        <div class="destinationCard" style="background: url(./images/destinationImages/delhi.jpg);">
-          <div class="destinationText">
-            <h2>Delhi</h2>
-            <p>Heart of India</p>
-          </div>
+        <div class="heroText">
+          <h2>Book Your Stay with Comfort</h2>
+          <p>Luxury rooms & great service</p>
+          <a href="#" class="btn">Book Now</a>
         </div>
-        <div class="destinationCard" style="background: url(./images/destinationImages/jaipur.jpg);">
-          <div class="destinationText">
-            <h2>Jaipur</h2>
-            <p>Royal Heritage</p>
-          </div>
+      </section>
+
+      <!-- trending travel destination section -->
+
+      <section id="trendingDestinations">
+        <div class="heading">
+          <h3>Trending Travel Destinations</h3>
+          <p>Explore the best places to stay</p>
         </div>
-
-        <div class="destinationCard" style="background: url(./images/destinationImages/udaipur.jpg);">
-          <div class="destinationText">
-            <h2>Udaipur</h2>
-            <p>City of Lakes</p>
-          </div>
-        </div>
-
-        <div class="destinationCard" style="background: url(./images/destinationImages/manali.jpg);">
-          <div class="destinationText">
-            <h2>Manali</h2>
-            <p>Snowy Retreat</p>
-          </div>
-        </div>
-
-        <div class="destinationCard" style="background: url(./images/destinationImages/goa.jpg);">
-          <div class="destinationText">
-            <h2>Goa</h2>
-            <p>Beach Paradise</p>
-          </div>
-        </div>
-
-
-      </div>
-
-    </section>
-
-    <!-- rooms section to book room -->
-    <section id="dealsOfWeek">
-      <div class="heading">
-        <h3>Deals for the weekend</h3>
-        <p>Save on stays for 25 July - 27 July</p>
-      </div>
-      <div class="roomCards">
-
-        <div class="roomCard">
-          <img src="./images/roomImages/room1.jpg" alt="Room" />
-          <div class="roomDetails">
-            <h2>Sunrise Residency</h2>
-            <p>Jaipur, India</p>
-            <div class="priceDiv">
-              <span class="oldPrice"><del>₹8000</del></span>
-              <span class="currentPrice">₹5500</span>
-              <span>/ night</span>
+        <div class="destinationCards">
+          <div
+            class="destinationCard"
+            style="background: url(./images/destinationImages/delhi.jpg)"
+          >
+            <div class="destinationText">
+              <h2>Delhi</h2>
+              <p>Heart of India</p>
             </div>
-            <div class="ratingDiv">
-              <span class="rating">4.2</span>
-              <span class="reviews">35 reviews</span>
+          </div>
+          <div
+            class="destinationCard"
+            style="background: url(./images/destinationImages/jaipur.jpg)"
+          >
+            <div class="destinationText">
+              <h2>Jaipur</h2>
+              <p>Royal Heritage</p>
             </div>
-            <div class="btn">
-              <button>View</button>
-              <button>Book</button>
+          </div>
+
+          <div
+            class="destinationCard"
+            style="background: url(./images/destinationImages/udaipur.jpg)"
+          >
+            <div class="destinationText">
+              <h2>Udaipur</h2>
+              <p>City of Lakes</p>
+            </div>
+          </div>
+
+          <div
+            class="destinationCard"
+            style="background: url(./images/destinationImages/manali.jpg)"
+          >
+            <div class="destinationText">
+              <h2>Manali</h2>
+              <p>Snowy Retreat</p>
+            </div>
+          </div>
+
+          <div
+            class="destinationCard"
+            style="background: url(./images/destinationImages/goa.jpg)"
+          >
+            <div class="destinationText">
+              <h2>Goa</h2>
+              <p>Beach Paradise</p>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="roomCard">
-          <img src="./images/roomImages/room2.jpg" alt="Room" />
-          <div class="roomDetails">
-            <h2>Royal Heritage</h2>
-            <p>Udaipur, India</p>
-            <div class="priceDiv">
-              <span class="oldPrice"><del>₹12000</del></span>
-              <span class="currentPrice">₹9000</span>
-              <span>/ night</span>
+      <!-- rooms section to book room -->
+      <section id="dealsOfWeek">
+        <div class="heading">
+          <h3>Deals for the weekend</h3>
+          <p>Save on stays for 25 July - 27 July</p>
+        </div>
+        <div class="roomCards">
+          <div class="roomCard">
+            <img src="./images/roomImages/room1.jpg" alt="Room" />
+            <div class="roomDetails">
+              <h2>Sunrise Residency</h2>
+              <p>Jaipur, India</p>
+              <div class="priceDiv">
+                <span class="oldPrice"><del>₹8000</del></span>
+                <span class="currentPrice">₹5500</span>
+                <span>/ night</span>
+              </div>
+              <div class="ratingDiv">
+                <span class="rating">4.2</span>
+                <span class="reviews">35 reviews</span>
+              </div>
+              <div class="btn">
+                <button>View</button>
+                <button>Book</button>
+              </div>
             </div>
-            <div class="ratingDiv">
-              <span class="rating">4.7</span>
-              <span class="reviews">89 reviews</span>
+          </div>
+
+          <div class="roomCard">
+            <img src="./images/roomImages/room2.jpg" alt="Room" />
+            <div class="roomDetails">
+              <h2>Royal Heritage</h2>
+              <p>Udaipur, India</p>
+              <div class="priceDiv">
+                <span class="oldPrice"><del>₹12000</del></span>
+                <span class="currentPrice">₹9000</span>
+                <span>/ night</span>
+              </div>
+              <div class="ratingDiv">
+                <span class="rating">4.7</span>
+                <span class="reviews">89 reviews</span>
+              </div>
+              <div class="btn">
+                <button>View</button>
+                <button>Book</button>
+              </div>
             </div>
-            <div class="btn">
-              <button>View</button>
-              <button>Book</button>
+          </div>
+
+          <div class="roomCard">
+            <img src="./images/roomImages/room3.jpg" alt="Room" />
+            <div class="roomDetails">
+              <h2>Seaview Retreat</h2>
+              <p>Goa, India</p>
+              <div class="priceDiv">
+                <span class="oldPrice"><del>₹7000</del></span>
+                <span class="currentPrice">₹4800</span>
+                <span>/ night</span>
+              </div>
+              <div class="ratingDiv">
+                <span class="rating">4.6</span>
+                <span class="reviews">58 reviews</span>
+              </div>
+              <div class="btn">
+                <button>View</button>
+                <button>Book</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="roomCard">
+            <img src="./images/roomImages/room4.jpg" alt="Room" />
+            <div class="roomDetails">
+              <h2>Hotel Guru Preet</h2>
+              <p>New Delhi, India</p>
+              <div class="priceDiv">
+                <span class="oldPrice"><del>₹9000</del></span>
+                <span class="currentPrice">₹5000</span>
+                <span>/ night</span>
+              </div>
+              <div class="ratingDiv">
+                <span class="rating">4.5</span>
+                <span class="reviews">42 reviews</span>
+              </div>
+              <div class="btn">
+                <button>View</button>
+                <button>Book</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="roomCard">
+            <img src="./images/roomImages/room5.jpg" alt="Room" />
+            <div class="roomDetails">
+              <h2>Tranquil Woods</h2>
+              <p>Manali, India</p>
+              <div class="priceDiv">
+                <span class="oldPrice"><del>₹10000</del></span>
+                <span class="currentPrice">₹7500</span>
+                <span>/ night</span>
+              </div>
+              <div class="ratingDiv">
+                <span class="rating">4.8</span>
+                <span class="reviews">67 reviews</span>
+              </div>
+              <div class="btn">
+                <button>View</button>
+                <button>Book</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="roomCard">
+            <img src="./images/roomImages/room6.jpg" alt="Room" />
+            <div class="roomDetails">
+              <h2>Urban Nest</h2>
+              <p>Bangalore, India</p>
+              <div class="priceDiv">
+                <span class="oldPrice"><del>₹9500</del></span>
+                <span class="currentPrice">₹6800</span>
+                <span>/ night</span>
+              </div>
+              <div class="ratingDiv">
+                <span class="rating">4.3</span>
+                <span class="reviews">51 reviews</span>
+              </div>
+              <div class="btn">
+                <button>View</button>
+                <button>Book</button>
+              </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="roomCard">
-          <img src="./images/roomImages/room3.jpg" alt="Room" />
-          <div class="roomDetails">
-            <h2>Seaview Retreat</h2>
-            <p>Goa, India</p>
-            <div class="priceDiv">
-              <span class="oldPrice"><del>₹7000</del></span>
-              <span class="currentPrice">₹4800</span>
-              <span>/ night</span>
-            </div>
-            <div class="ratingDiv">
-              <span class="rating">4.6</span>
-              <span class="reviews">58 reviews</span>
-            </div>
-            <div class="btn">
-              <button>View</button>
-              <button>Book</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="roomCard">
-          <img src="./images/roomImages/room4.jpg" alt="Room" />
-          <div class="roomDetails">
-            <h2>Hotel Guru Preet</h2>
-            <p>New Delhi, India</p>
-            <div class="priceDiv">
-              <span class="oldPrice"><del>₹9000</del></span>
-              <span class="currentPrice">₹5000</span>
-              <span>/ night</span>
-            </div>
-            <div class="ratingDiv">
-              <span class="rating">4.5</span>
-              <span class="reviews">42 reviews</span>
-            </div>
-            <div class="btn">
-              <button>View</button>
-              <button>Book</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="roomCard">
-          <img src="./images/roomImages/room5.jpg" alt="Room" />
-          <div class="roomDetails">
-            <h2>Tranquil Woods</h2>
-            <p>Manali, India</p>
-            <div class="priceDiv">
-              <span class="oldPrice"><del>₹10000</del></span>
-              <span class="currentPrice">₹7500</span>
-              <span>/ night</span>
-            </div>
-            <div class="ratingDiv">
-              <span class="rating">4.8</span>
-              <span class="reviews">67 reviews</span>
-            </div>
-            <div class="btn">
-              <button>View</button>
-              <button>Book</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="roomCard">
-          <img src="./images/roomImages/room6.jpg" alt="Room" />
-          <div class="roomDetails">
-            <h2>Urban Nest</h2>
-            <p>Bangalore, India</p>
-            <div class="priceDiv">
-              <span class="oldPrice"><del>₹9500</del></span>
-              <span class="currentPrice">₹6800</span>
-              <span>/ night</span>
-            </div>
-            <div class="ratingDiv">
-              <span class="rating">4.3</span>
-              <span class="reviews">51 reviews</span>
-            </div>
-            <div class="btn">
-              <button>View</button>
-              <button>Book</button>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- enquiry section to get info about rooms -->
-    <!-- <section id="enquiry">
+      <!-- enquiry section to get info about rooms -->
+      <!-- <section id="enquiry">
       <h3>Enquiry</h3>
       <form action="#">
         <label for="name">Name</label>
@@ -262,10 +273,43 @@
         <input type="button" value="Submit" />
       </form>
     </section> -->
-  </main>
+    </main>
 
-  <footer></footer>
-
-</body>
-
+    <footer>
+      <div class="footerlogo">
+        <h2 class="logo">MyStayMate</h2>
+        <p>
+          MyStayMate.com is part of MyStayMate Holdings Inc., the world leader
+          in online travel and related services.
+        </p>
+        <p>Copyright © 1996-2025 MyStayMate.com™. All rights reserved.</p>
+      </div>
+      <div class="footermenu">
+        <h3>MENU</h3>
+        <ul>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">Terms & Conditions</a></li>
+          <li><a href="">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footerfollow">
+        <h3>FOLLOW US</h3>
+        <ul>
+          <li><a href="">Facebook</a></li>
+          <li><a href="">Twitter</a></li>
+          <li><a href="">Instagram</a></li>
+          <li><a href="">Thread</a></li>
+        </ul>
+      </div>
+      <div class="footerform">
+        <h3>NEWSLETTER</h3>
+        <p>Stay up to date with our latest Deals and Offers.</p>
+        <form action="#">
+          <input type="email" name="" id="" placeholder="Your email address" />
+          <input type="submit" value="Subscribe" />
+        </form>
+      </div>
+    </footer>
+  </body>
 </html>
