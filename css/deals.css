@@ -32,6 +32,9 @@
   align-items: start;
   gap: 10px;
 }
+.roomCard h2 {
+  font-size: 16px;
+}
 .roomCard .btn {
   width: 100%;
   gap: 10px;

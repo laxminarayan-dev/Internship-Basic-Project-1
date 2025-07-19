@@ -4,11 +4,15 @@
   padding: 0;
   box-sizing: border-box;
 }
-section:not(:nth-child(1)) {
+section {
   max-width: 1000px;
   padding: 40px;
   background: #fff;
   margin: auto;
+}
+#heroSection {
+  max-width: none;
+  padding: 0;
 }
 
 .heading {

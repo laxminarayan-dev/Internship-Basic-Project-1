@@ -1,21 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | BookMyHotel</title>
-    <style>
-    
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-    </style>
-</head>
-<body>
-    <iframe width="100%" height="60px" src="../component/navbar.html" frameborder="0"></iframe>
-    <main>Login Page</main>
-    <footer></footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | MyStayMate</title>
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/auth.css" />
+  </head>
+  <body>
+    <!-- header div to show navbar and sidebar -->
+    <header>
+      <nav>
+        <div class="leftNav">
+          <div class="logo">
+            <a href="/">MyStayMate</a>
+          </div>
+        </div>
+        <div class="rightNav">
+          <ul>
+            <li><a href="../pages/about.html">About</a></li>
+            <li><a href="../pages/rooms.html">Rooms</a></li>
+            <li><a href="../pages/login.html">Login</a></li>
+            <li><a href="../pages/register.html">Register</a></li>
+          </ul>
+          <label for="menuBar">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+        </div>
+      </nav>
+      <input type="checkbox" name="menuBar" id="menuBar" />
+      <div class="sidebar">
+        <div class="backdrop">
+          <label for="menuBar"></label>
+        </div>
+        <div class="rightNav">
+          <div class="sidebarHeader">
+            <div class="logo">
+              <a href="/">MyStayMate</a>
+            </div>
+            <label for="menuBar">
+              <i class="fa-solid fa-xmark"></i>
+            </label>
+          </div>
+          <ul>
+            <li><a href="../pages/about.html">About</a></li>
+            <li><a href="../pages/rooms.html">Rooms</a></li>
+            <li><a href="../pages/login.html">Login</a></li>
+            <li><a href="../pages/register.html">Register</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- main div to show the login page -->
+    <main>
+      <div class="authbox">
+        <div class="authform">
+          <h1>Login</h1>
+          <div class="icon">
+            <button><i class="fa-brands fa-google"></i></button>
+            <button><i class="fa-brands fa-facebook-f"></i></button>
+          </div>
+          <p>or use your account</p>
+          <form action="#">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              required
+            />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+              required
+            />
+            <a href="#">forgot your password?</a>
+            <button>Login</button>
+            <div class="divider">
+              <hr />
+              or
+              <hr />
+            </div>
+            <button><a href="/pages/register.html">Register</a></button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <!-- footer div to show footer content -->
+    <footer>
+      <div class="footerlogo">
+        <h2 class="logo">MyStayMate</h2>
+        <p>
+          MyStayMate.com is part of MyStayMate Holdings Inc., the world leader
+          in online travel and related services.
+        </p>
+        <p>Copyright © 1996-2025 MyStayMate.com™. All rights reserved.</p>
+      </div>
+      <div class="footermenu">
+        <h3>MENU</h3>
+        <ul>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">Terms & Conditions</a></li>
+          <li><a href="">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footerfollow">
+        <h3>FOLLOW US</h3>
+        <ul>
+          <li><a href="">Facebook</a></li>
+          <li><a href="">Twitter</a></li>
+          <li><a href="">Instagram</a></li>
+          <li><a href="">Thread</a></li>
+        </ul>
+      </div>
+      <div class="footerform">
+        <h3>NEWSLETTER</h3>
+        <p>Stay up to date with our latest Deals and Offers.</p>
+        <form action="#">
+          <input type="email" name="" id="" placeholder="Your email address" />
+          <input type="submit" value="Subscribe" />
+        </form>
+      </div>
+    </footer>
+  </body>
 </html>

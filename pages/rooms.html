@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rooms | MyStayMate</title>
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/deals.css" />
+  </head>
+
+  <body>
+    <!-- header div to show navbar and sidebar -->
+
+    <header>
+      <nav>
+        <div class="leftNav">
+          <div class="logo">
+            <a href="/">MyStayMate</a>
+          </div>
+        </div>
+        <div class="rightNav">
+          <ul>
+            <li><a href="../pages/about.html">About</a></li>
+            <li><a href="../pages/rooms.html">Rooms</a></li>
+            <li><a href="../pages/login.html">Login</a></li>
+            <li><a href="../pages/register.html">Register</a></li>
+          </ul>
+          <label for="menuBar">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+        </div>
+      </nav>
+      <input type="checkbox" name="menuBar" id="menuBar" />
+      <div class="sidebar">
+        <div class="backdrop">
+          <label for="menuBar"></label>
+        </div>
+        <div class="rightNav">
+          <div class="sidebarHeader">
+            <div class="logo">
+              <a href="/">MyStayMate</a>
+            </div>
+            <label for="menuBar">
+              <i class="fa-solid fa-xmark"></i>
+            </label>
+          </div>
+          <ul>
+            <li><a href="../pages/about.html">About</a></li>
+            <li><a href="../pages/rooms.html">Rooms</a></li>
+            <li><a href="../pages/login.html">Login</a></li>
+            <li><a href="../pages/register.html">Register</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- main div to show the login page -->
+    <main>
+      <!-- popular rooms section to book room -->
+      <section id="popularRoomSection">
+        <div class="heading">
+          <h3>Most Popular</h3>
+        </div>
+        <div class="roomCards">
+          <div class="roomCard">
+            <img src="../images/roomImages/room1.jpg" alt="Room" />
+            <div class="roomDetails">
+              <h2>Luxury Palace</h2>
+              <p>Mumbai, India</p>
+              <div class="priceDiv">
+                <span class="currentPrice">₹6300</span>
+                <span>/ night</span>
+              </div>
+              <div class="ratingDiv">
+                <span class="rating">4.4</span>
+                <span class="reviews">62 reviews</span>
+              </div>
+              <div class="btn">
+                <button>View</button>
+                <button>Book</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="roomCard">
+            <img src="../images/roomImages/room2.jpg" alt="Room" />
+            <div class="roomDetails">
+              <h2>Mountain View Inn</h2>
+              <p>Shimla, India</p>
+              <div class="priceDiv">
+                <span class="currentPrice">₹5200</span>
+                <span>/ night</span>
+              </div>
+              <div class="ratingDiv">
+                <span class="rating">4.6</span>
+                <span class="reviews">74 reviews</span>
+              </div>
+              <div class="btn">
+                <button>View</button>
+                <button>Book</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="roomCard">
+            <img src="../images/roomImages/room3.jpg" alt="Room" />
+            <div class="roomDetails">
+              <h2>Lakeside Escape</h2>
+              <p>Nainital, India</p>
+              <div class="priceDiv">
+                <span class="currentPrice">₹4700</span>
+                <span>/ night</span>
+              </div>
+              <div class="ratingDiv">
+                <span class="rating">4.5</span>
+                <span class="reviews">88 reviews</span>
+              </div>
+              <div class="btn">
+                <button>View</button>
+                <button>Book</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="roomCard">
+            <img src="../images/roomImages/room4.jpg" alt="Room" />
+            <div class="roomDetails">
+              <h2>City Central Inn</h2>
+              <p>Delhi, India</p>
+              <div class="priceDiv">
+                <span class="currentPrice">₹5800</span>
+                <span>/ night</span>
+              </div>
+              <div class="ratingDiv">
+                <span class="rating">4.3</span>
+                <span class="reviews">49 reviews</span>
+              </div>
+              <div class="btn">
+                <button>View</button>
+                <button>Book</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="roomCard">
+            <img src="../images/roomImages/room5.jpg" alt="Room" />
+            <div class="roomDetails">
+              <h2>Evergreen Stays</h2>
+              <p>Mussoorie, India</p>
+              <div class="priceDiv">
+                <span class="currentPrice">₹7100</span>
+                <span>/ night</span>
+              </div>
+              <div class="ratingDiv">
+                <span class="rating">4.7</span>
+                <span class="reviews">66 reviews</span>
+              </div>
+              <div class="btn">
+                <button>View</button>
+                <button>Book</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="roomCard">
+            <img src="../images/roomImages/room6.jpg" alt="Room" />
+            <div class="roomDetails">
+              <h2>Cloud Nine Hotel</h2>
+              <p>Chandigarh, India</p>
+              <div class="priceDiv">
+                <span class="currentPrice">₹6900</span>
+                <span>/ night</span>
+              </div>
+              <div class="ratingDiv">
+                <span class="rating">4.2</span>
+                <span class="reviews">57 reviews</span>
+              </div>
+              <div class="btn">
+                <button>View</button>
+                <button>Book</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- rooms in delhi -->
+      <section id="roomsInDelhi">
+        <div class="heading">
+          <h3>Rooms Available in Delhi</h3>
+        </div>
+        <div class="roomCards">
+          <div class="roomCard">
+            <img src="../images/roomImages/room1.jpg" alt="Room" />
+            <div class="roomDetails">
+              <h2>The Grand Capital</h2>
+              <p>Connaught Place, Delhi</p>
+              <div class="priceDiv">
+                <span class="currentPrice">₹6200</span> <span>/ night</span>
+              </div>
+              <div class="ratingDiv">
+                <span class="rating">4.4</span>
+                <span class="reviews">48 reviews</span>
+              </div>
+              <div class="btn"><button>View</button><button>Book</button></div>
+            </div>
+          </div>
+          <div class="roomCard">
+            <img src="../images/roomImages/room2.jpg" alt="Room" />
+            <div class="roomDetails">
+              <h2>Royal Heritage Inn</h2>
+              <p>Karol Bagh, Delhi</p>
+              <div class="priceDiv">
+                <span class="currentPrice">₹4800</span> <span>/ night</span>
+              </div>
+              <div class="ratingDiv">
+                <span class="rating">4.2</span>
+                <span class="reviews">39 reviews</span>
+              </div>
+              <div class="btn"><button>View</button><button>Book</button></div>
+            </div>
+          </div>
+          <div class="roomCard">
+            <img src="../images/roomImages/room3.jpg" alt="Room" />
+            <div class="roomDetails">
+              <h2>Urban Stays</h2>
+              <p>Saket, Delhi</p>
+              <div class="priceDiv">
+                <span class="currentPrice">₹5500</span> <span>/ night</span>
+              </div>
+              <div class="ratingDiv">
+                <span class="rating">4.5</span>
+                <span class="reviews">52 reviews</span>
+              </div>
+              <div class="btn"><button>View</button><button>Book</button></div>
+            </div>
+          </div>
+          <div class="roomCard">
+            <img src="../images/roomImages/room4.jpg" alt="Room" />
+            <div class="roomDetails">
+              <h2>Comfort Palace</h2>
+              <p>Dwarka, Delhi</p>
+              <div class="priceDiv">
+                <span class="currentPrice">₹4600</span> <span>/ night</span>
+              </div>
+              <div class="ratingDiv">
+                <span class="rating">4.1</span>
+                <span class="reviews">34 reviews</span>
+              </div>
+              <div class="btn"><button>View</button><button>Book</button></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- rooms in manali -->
+      <section id="roomsInManali">
+        <div class="heading">
+          <h3>Rooms Available in Manali</h3>
+        </div>
+        <div class="roomCards">
+          <div class="roomCard">
+            <img src="../images/roomImages/room5.jpg" alt="Room" />
+            <div class="roomDetails">
+              <h2>Snowy Pines Retreat</h2>
+              <p>Old Manali</p>
+              <div class="priceDiv">
+                <span class="currentPrice">₹7200</span> <span>/ night</span>
+              </div>
+              <div class="ratingDiv">
+                <span class="rating">4.6</span>
+                <span class="reviews">53 reviews</span>
+              </div>
+              <div class="btn"><button>View</button><button>Book</button></div>
+            </div>
+          </div>
+          <div class="roomCard">
+            <img src="../images/roomImages/room6.jpg" alt="Room" />
+            <div class="roomDetails">
+              <h2>Mountain Bliss</h2>
+              <p>Solang Valley</p>
+              <div class="priceDiv">
+                <span class="currentPrice">₹6500</span> <span>/ night</span>
+              </div>
+              <div class="ratingDiv">
+                <span class="rating">4.8</span>
+                <span class="reviews">71 reviews</span>
+              </div>
+              <div class="btn"><button>View</button><button>Book</button></div>
+            </div>
+          </div>
+
+          <div class="roomCard">
+            <img src="../images/roomImages/room8.jpg" alt="Room" />
+            <div class="roomDetails">
+              <h2>The Himalayan Nest</h2>
+              <p>Vashisht, Manali</p>
+              <div class="priceDiv">
+                <span class="currentPrice">₹6100</span> <span>/ night</span>
+              </div>
+              <div class="ratingDiv">
+                <span class="rating">4.5</span>
+                <span class="reviews">46 reviews</span>
+              </div>
+              <div class="btn"><button>View</button><button>Book</button></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- rooms in goa -->
+      <section id="roomsInGoa">
+        <div class="heading">
+          <h3>Rooms Available in Goa</h3>
+        </div>
+        <div class="roomCards">
+          <div class="roomCard">
+            <img src="../images/roomImages/room1.jpg" alt="Room" />
+            <div class="roomDetails">
+              <h2>Coastal Breeze Inn</h2>
+              <p>Calangute, Goa</p>
+              <div class="priceDiv">
+                <span class="currentPrice">₹5000</span> <span>/ night</span>
+              </div>
+              <div class="ratingDiv">
+                <span class="rating">4.5</span>
+                <span class="reviews">62 reviews</span>
+              </div>
+              <div class="btn"><button>View</button><button>Book</button></div>
+            </div>
+          </div>
+          <div class="roomCard">
+            <img src="../images/roomImages/room5.jpg" alt="Room" />
+            <div class="roomDetails">
+              <h2>Goan Shores</h2>
+              <p>Baga Beach, Goa</p>
+              <div class="priceDiv">
+                <span class="currentPrice">₹4700</span> <span>/ night</span>
+              </div>
+              <div class="ratingDiv">
+                <span class="rating">4.2</span>
+                <span class="reviews">55 reviews</span>
+              </div>
+              <div class="btn"><button>View</button><button>Book</button></div>
+            </div>
+          </div>
+          <div class="roomCard">
+            <img src="../images/roomImages/room7.jpg" alt="Room" />
+            <div class="roomDetails">
+              <h2>Beachwalk Residency</h2>
+              <p>Anjuna, Goa</p>
+              <div class="priceDiv">
+                <span class="currentPrice">₹5400</span> <span>/ night</span>
+              </div>
+              <div class="ratingDiv">
+                <span class="rating">4.6</span>
+                <span class="reviews">67 reviews</span>
+              </div>
+              <div class="btn"><button>View</button><button>Book</button></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer div to show footer content -->
+    <footer>
+      <div class="footerlogo">
+        <h2 class="logo">MyStayMate</h2>
+        <p>
+          MyStayMate.com is part of MyStayMate Holdings Inc., the world leader
+          in online travel and related services.
+        </p>
+        <p>Copyright © 1996-2025 MyStayMate.com™. All rights reserved.</p>
+      </div>
+      <div class="footermenu">
+        <h3>MENU</h3>
+        <ul>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">Terms & Conditions</a></li>
+          <li><a href="">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footerfollow">
+        <h3>FOLLOW US</h3>
+        <ul>
+          <li><a href="">Facebook</a></li>
+          <li><a href="">Twitter</a></li>
+          <li><a href="">Instagram</a></li>
+          <li><a href="">Thread</a></li>
+        </ul>
+      </div>
+      <div class="footerform">
+        <h3>NEWSLETTER</h3>
+        <p>Stay up to date with our latest Deals and Offers.</p>
+        <form action="#">
+          <input type="email" name="" id="" placeholder="Your email address" />
+          <input type="submit" value="Subscribe" />
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
