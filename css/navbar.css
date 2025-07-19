@@ -1,8 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 body {
   overflow-x: hidden;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -21,7 +16,10 @@ nav {
   align-items: center;
   padding: 10px 20px;
 }
-.left a {
+header > input {
+  display: none;
+}
+.logo a {
   text-decoration: none;
   color: black;
   font-weight: bolder;
@@ -29,21 +27,24 @@ nav {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
-.right > ul {
+.rightNav > label {
+  display: none;
+}
+.rightNav > ul {
   display: flex;
   gap: 15px;
 }
-.right > ul > li {
+.rightNav > ul > li {
   position: relative;
   list-style: none;
 }
 
-.right > ul > li > a {
+.rightNav > ul > li > a {
   color: black;
   text-decoration: none;
   font-size: 13px;
 }
-.right > ul > li > a::after {
+.rightNav > ul > li > a::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -55,29 +56,133 @@ nav {
   transition: all 200ms ease-in-out;
 }
 
-.right > ul > li:not(:nth-child(3)):not(:nth-child(4)) > a:hover::after {
+.rightNav > ul > li:not(:nth-child(3)):not(:nth-child(4)) > a:hover::after {
   width: 100%;
 }
 
-.right > ul > li:nth-child(3) > a {
+.rightNav > ul > li:nth-child(3) > a {
   background-color: black;
   border: 2px solid black;
   color: wheat;
   padding: 3px 20px 6px 20px;
   border-radius: 50px;
 }
-.right > ul > li:nth-child(3) > a:hover {
+.rightNav > ul > li:nth-child(3) > a:hover {
   background-color: transparent;
   color: black;
 }
 
-.right > ul > li:nth-child(4) > a {
+.rightNav > ul > li:nth-child(4) > a {
   background-color: transparent;
   border: 2px solid black;
   padding: 3px 20px 6px 20px;
   border-radius: 50px;
 }
-.right > ul > li:nth-child(4) > a:hover {
+.rightNav > ul > li:nth-child(4) > a:hover {
   background-color: black;
   color: wheat;
+}
+#menuBar:checked ~ .sidebar {
+  display: block;
+}
+#menuBar:not(:checked) ~ .sidebar {
+  display: none;
+}
+
+#menuBar:checked ~ .sidebar > .rightNav {
+  left: 0px;
+}
+#menuBar:not(:checked) ~ .sidebar > .rightNav {
+  left: -250px;
+}
+
+#menuBar:checked ~ .sidebar > .backdrop {
+  display: block;
+}
+#menuBar:not(:checked) ~ .sidebar > .backdrop {
+  display: none;
+}
+
+/* sidebar css */
+.sidebar {
+  position: absolute;
+  z-index: 100;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+}
+.backdrop {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.backdrop > label {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.sidebar > .rightNav {
+  position: absolute;
+  left: -250px;
+  top: 0;
+  background-color: white;
+  height: 100vh;
+  width: 250px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: baseline;
+  gap: 40px;
+  transition: left 200ms ease-in-out;
+}
+.sidebarHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sidebarHeader > i {
+  cursor: pointer;
+}
+
+.sidebar > .rightNav > ul {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+}
+
+.sidebar > .rightNav > ul > li > a {
+  font-weight: 700;
+}
+
+/* media query */
+
+@media screen and (min-width: 648px) {
+  .rightNav > {
+    display: none !important;
+  }
+  nav > .rightNav > ul {
+    display: flex !important;
+  }
+  .sidebar,
+  .sidebar > .backdrop {
+    display: none !important;
+  }
+  .sidebar > .rightNav {
+    left: -250px !important;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 648px) {
+  .rightNav > label {
+    display: block !important;
+  }
+  nav > .rightNav > ul {
+    display: none !important;
+  }
 }
